@@ -211,10 +211,9 @@ body::-webkit-scrollbar {
     }
 
     .hero-card {
-        margin: 50px auto 0;
+        margin-top: 50px;
         flex-wrap: wrap;
         justify-content: center;
-        width: 90%;
     }
 
     .hero-card .voters {
@@ -228,7 +227,7 @@ body::-webkit-scrollbar {
     /* Banner */
 
     .banner {
-        width: 90%;
+        width: 100%;
         margin: 5vh auto;
         background: none;
         height: max-content;
