@@ -1,0 +1,264 @@
+:root {
+    --primary: #FF6838;
+    --text: #302F3C;
+    --secondary: #FAFAFA;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Navbar */
+
+.navbar-brand {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: var(--text);
+}
+
+.nav-link.active {
+    color: var(--primary);
+}
+
+.shop {
+    background: var(--secondary);
+    border-radius: 20px;
+}
+
+.btnPrimary {
+    background-color: var(--primary);
+    border-radius: 20px;
+}
+
+/* Hero */
+
+.hero-text .badge {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.hero-text h1 {
+    font-size: 70px;
+}
+
+.hero-text h1 span {
+    color: var(--primary);
+}
+
+.hero-text h6 {
+    width: 80%;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.btnSecondary {
+    background-color: var(--secondary);
+    border-radius: 20px;
+}
+
+.hero-card {
+    background-color: var(--secondary);
+    width: fit-content;
+    border-radius: 30px;
+    margin-top: 60px;
+}
+
+.hero-card .bronze {
+    border: 10px solid white;
+}
+
+.hero-card .voters {
+    margin-left: 35%;
+}
+
+.hero-card p {
+    color: var(--primary);
+}
+
+.sushi {
+    left: 45vw;
+}
+
+.chili {
+    top: 35vh;
+    left: 88vw;
+}
+
+.pizza {
+    top: 80vh;
+    left: 38vw;
+}
+
+.french-fries {
+    top: 72vh;
+    right: 0;
+}
+
+/* Banner */
+
+.banner {
+    background-color: var(--primary);
+    border-radius: 50px;
+    margin-top: 15vh;
+    height: 508px;
+}
+
+.banner h1 {
+    font-size: 41px;
+    color: white;
+}
+
+.banner .card {
+    width: 210px;
+    height: 322px;
+    border-radius: 50px;
+}
+
+.banner .card h4 {
+    font-size: 23px;
+}
+
+.banner .card-img-top {
+    width: 83px;
+    height: 83px;
+}
+
+.banner .mobile {
+    left: 40vw;
+    top: -75vh;
+}
+
+
+
+
+/* RESPONSIVE */
+
+@media (min-width: 320px) and (max-width: 600px) {
+    
+    /* Navbar */
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar-brand img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav-btn {
+        margin: 2% 20%;
+    }
+
+    .shop {
+        background: none;
+        border-radius: 0;
+
+    }
+
+    .btnPrimary {
+        border-radius: 10px;
+        padding: 10px 15px;
+    }
+
+    /* Hero */
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-text {
+        margin: 25px 15px;
+    }
+
+    .hero-text .badge {
+        font-size: 12px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .hero-text h6 {
+        width: 100%;
+        margin-bottom: 25px;
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .hero-btn {
+        flex-wrap: wrap;
+    }
+
+    .btnSecondary {
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+
+    .hero-card {
+        margin-top: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-card .voters {
+        margin-left: 40%;
+    }
+
+    .sushi, .chili, .pizza, .french-fries {
+        display: none;
+    }
+
+    /* Banner */
+
+    .banner {
+        width: 90%;
+        margin: 5vh auto;
+        background: none;
+        height: max-content;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+        text-align: center;
+        color: var(--text);
+    }
+
+    .banner h1 img {
+        display: none;
+    }
+
+    .banner-card {
+        flex-wrap: wrap;
+    }
+
+    .banner .card {
+        width: 100%;
+        margin: 20px;
+        height: max-content;
+    }
+
+    .banner .card-img-top {
+        width: 73px;
+        height: 73px;
+    }
+
+    .banner .mobile {
+        display: none;
+    }
+}
