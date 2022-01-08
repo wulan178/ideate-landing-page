@@ -124,6 +124,10 @@ body::-webkit-scrollbar {
 
 .banner h1 {
     font-size: 41px;
+    color: white;
+}
+
+.banner-dark h1 {
     color: var(--text);
 }
 
@@ -154,102 +158,33 @@ body::-webkit-scrollbar {
 /* RESPONSIVE */
 
 @media (min-width: 320px) and (max-width: 600px) {
+
     
-    /* Navbar */
-
-    .navbar-brand {
-        font-size: 20px;
-    }
-
-    .navbar-brand img {
-        width: 35px;
-        height: 35px;
-    }
-
-    .shop {
-        background: none;
-        border-radius: 0;
-
-    }
-
-    .btnPrimary {
-        border-radius: 10px;
-        padding: 10px 15px;
-    }
-
-    /* Hero */
-
-    .hero-img {
-        display: none;
-    }
-
-    .hero-text {
-        margin: 25px 15px;
-    }
-
-    .hero-text .badge {
-        font-size: 12px;
-    }
-
-    .hero-text h1 {
-        font-size: 40px;
-        margin-bottom: 15px;
-    }
-
-    .hero-text h6 {
-        width: 100%;
-        margin-bottom: 25px;
-        font-size: 16px;
-        line-height: 23px;
-    }
-
-    .hero-btn {
-        flex-wrap: wrap;
-    }
-
-    .btnSecondary {
-        padding: 10px 15px;
-        border-radius: 10px;
-    }
-
-    .hero-card {
-        margin-top: 50px;
-        flex-wrap: wrap;
-        justify-content: center;
-        border-radius: 20px;
-    }
-
-    .hero-card .voters {
-        margin-left: 40%;
-    }
-
-    .sushi, .chili, .pizza, .french-fries {
-        display: none;
-    }
-
-    /* Banner */
-
     .banner {
         width: 100%;
         margin: 5vh auto;
         background: none;
         height: max-content;
     }
-
+    
     .banner h1 {
         font-size: 30px;
         text-align: center;
+        color: var(--text);
+    }
+
+    .banner-dark h1 {
         color: white;
     }
 
     .banner h1 img {
         display: none;
     }
-
+    
     .banner-card {
         flex-wrap: wrap;
     }
-
+    
     .banner .card {
         background-color: var(--primary);
         width: 100%;
@@ -257,12 +192,12 @@ body::-webkit-scrollbar {
         height: max-content;
         border-radius: 20px;
     }
-
+    
     .banner .card-img-top {
         width: 73px;
         height: 73px;
     }
-
+    
     .banner .mobile {
         display: none;
     }

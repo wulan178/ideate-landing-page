@@ -18,34 +18,6 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-
-/* Navbar */
-
-.navbar-brand {
-    font-size: 24px;
-    letter-spacing: 1px;
-}
-
-.nav-link {
-    color: var(--text);
-}
-
-.nav-link.active {
-    color: var(--primary);
-}
-
-.shop {
-    background: var(--secondary);
-    border-radius: 20px;
-}
-
-.btnPrimary {
-    background-color: var(--primary);
-    border-radius: 20px;
-}
-
-/* Hero */
-
 .hero-text .badge {
     background-color: var(--secondary);
     color: var(--primary);
@@ -65,6 +37,10 @@ body::-webkit-scrollbar {
     line-height: 25px;
 }
 
+.btnPrimary {
+    background-color: var(--primary);
+    border-radius: 20px;
+}
 
 .btnSecondary {
     background-color: var(--secondary);
@@ -109,75 +85,7 @@ body::-webkit-scrollbar {
     right: 0;
 }
 
-/* Banner */
-
-.banner {
-    background-color: var(--primary);
-    border-radius: 50px;
-    margin-top: 15vh;
-    height: 508px;
-}
-
-.banner-dark {
-    background-color: white;
-}
-
-.banner h1 {
-    font-size: 41px;
-    color: var(--text);
-}
-
-.banner .card {
-    background-color: var(--primary);
-    width: 210px;
-    height: 322px;
-    border-radius: 50px;
-}
-
-.banner .card h4 {
-    font-size: 23px;
-}
-
-.banner .card-img-top {
-    width: 83px;
-    height: 83px;
-}
-
-.banner .mobile {
-    left: 40vw;
-    margin-top: -80vh;
-}
-
-
-
-
-/* RESPONSIVE */
-
 @media (min-width: 320px) and (max-width: 600px) {
-    
-    /* Navbar */
-
-    .navbar-brand {
-        font-size: 20px;
-    }
-
-    .navbar-brand img {
-        width: 35px;
-        height: 35px;
-    }
-
-    .shop {
-        background: none;
-        border-radius: 0;
-
-    }
-
-    .btnPrimary {
-        border-radius: 10px;
-        padding: 10px 15px;
-    }
-
-    /* Hero */
 
     .hero-img {
         display: none;
@@ -207,6 +115,11 @@ body::-webkit-scrollbar {
         flex-wrap: wrap;
     }
 
+    .btnPrimary {
+        border-radius: 10px;
+        padding: 10px 15px;
+    }
+
     .btnSecondary {
         padding: 10px 15px;
         border-radius: 10px;
@@ -224,46 +137,6 @@ body::-webkit-scrollbar {
     }
 
     .sushi, .chili, .pizza, .french-fries {
-        display: none;
-    }
-
-    /* Banner */
-
-    .banner {
-        width: 100%;
-        margin: 5vh auto;
-        background: none;
-        height: max-content;
-    }
-
-    .banner h1 {
-        font-size: 30px;
-        text-align: center;
-        color: white;
-    }
-
-    .banner h1 img {
-        display: none;
-    }
-
-    .banner-card {
-        flex-wrap: wrap;
-    }
-
-    .banner .card {
-        background-color: var(--primary);
-        width: 100%;
-        margin: 20px;
-        height: max-content;
-        border-radius: 20px;
-    }
-
-    .banner .card-img-top {
-        width: 73px;
-        height: 73px;
-    }
-
-    .banner .mobile {
         display: none;
     }
 }
